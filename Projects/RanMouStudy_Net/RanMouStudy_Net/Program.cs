@@ -23,9 +23,14 @@ namespace RanMouStudy_Net
             Console.WriteLine(typeof(Dictionary<,>));
             Console.WriteLine(typeof(List<string>));
 
+            Object o;
+            o = Activator.CreateInstance(typeof(List<int>));
+            //o = Activator.CreateInstance(typeof(List<>));
+
             GenericMethod.Show<int>(7);
             Console.WriteLine();
 
+            
 
             ArrayList al = new ArrayList();
 
