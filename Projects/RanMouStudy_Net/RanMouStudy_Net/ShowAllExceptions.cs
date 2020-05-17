@@ -29,10 +29,12 @@ namespace RanMouStudy_Net
 
         private static StringBuilder WalkInheritanceHierarchy(StringBuilder sb, int indent, Type baseType, IEnumerable<Type> allTypes)
         {
-            string spaces = new String(' ', indent * 3);
+            string spaces = new String(' ', indent * 4);
             sb.AppendLine(spaces + baseType.FullName);
             foreach(var t in allTypes)
             {
+                //解释：从基类Exception开始，找到直接子类，将其设为新基类，从新遍历所有的type，找到其直接子类，如此递归。
+                //最终，当所有的类都不存在子类时，递归结束
                 if (t.GetTypeInfo().BaseType != baseType)
                     continue;
                 WalkInheritanceHierarchy(sb, indent + 1, t, allTypes);
