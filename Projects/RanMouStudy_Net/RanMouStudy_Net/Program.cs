@@ -12,12 +12,9 @@ namespace RanMouStudy_Net
     {
         static void Main(string[] args)
         {
-            CommonMethod.ShowInt(9);
-            CommonMethod.ShowString("haha");
-            CommonMethod.ShowObject(8);
-            CommonMethod.ShowObject(new int[] { 0, 1 });
             Console.WriteLine();
 
+            Console.WriteLine("------------泛型类型-------------");
             Console.WriteLine(typeof(List<int>));
             Console.WriteLine(typeof(List<>));
             Console.WriteLine(typeof(Dictionary<,>));
@@ -25,16 +22,13 @@ namespace RanMouStudy_Net
 
             Object o;
             o = Activator.CreateInstance(typeof(List<int>));
+            var t = o.GetType();
+            Console.WriteLine(t.GetType().FullName);
             //o = Activator.CreateInstance(typeof(List<>));
 
-            GenericMethod.Show<int>(7);
             Console.WriteLine();
-
-            
-
-            ArrayList al = new ArrayList();
-
-
+            Console.WriteLine("------------打印Exception类-------------");
+            ShowAllExceptions.Go();
 
             Console.ReadKey();
         }

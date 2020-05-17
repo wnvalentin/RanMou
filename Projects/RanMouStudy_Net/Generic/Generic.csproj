@@ -41,7 +41,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CommonMethod.cs" />
     <Compile Include="Generic.cs" />
     <Compile Include="GenericMethod.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

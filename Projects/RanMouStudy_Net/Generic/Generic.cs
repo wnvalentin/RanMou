@@ -39,4 +39,13 @@ namespace Generic
             return "";
         }
     }
+
+    public interface IMyInter
+    {
+        void DoSomething();
+
+        string Name { get; set; }
+
+        event EventHandler myEvent;
+    }
 }
