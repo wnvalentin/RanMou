@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RanMouStudy_Net", "RanMouSt
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generic", "Generic\Generic.csproj", "{44F902EF-8C39-43DC-9041-54C2941BC26D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reflection", "Reflection\Reflection.csproj", "{03EAE59E-8BDE-49AB-B5CA-DCB0B5F28E74}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{44F902EF-8C39-43DC-9041-54C2941BC26D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{44F902EF-8C39-43DC-9041-54C2941BC26D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{44F902EF-8C39-43DC-9041-54C2941BC26D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03EAE59E-8BDE-49AB-B5CA-DCB0B5F28E74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03EAE59E-8BDE-49AB-B5CA-DCB0B5F28E74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03EAE59E-8BDE-49AB-B5CA-DCB0B5F28E74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03EAE59E-8BDE-49AB-B5CA-DCB0B5F28E74}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

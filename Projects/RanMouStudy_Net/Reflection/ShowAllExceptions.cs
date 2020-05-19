@@ -5,9 +5,9 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RanMouStudy_Net
+namespace Reflection
 {
-    static class ShowAllExceptions
+    public static class ShowAllExceptions
     {
         public static void Go()
         {
